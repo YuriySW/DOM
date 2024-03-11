@@ -6,7 +6,6 @@ const propsList = document.querySelectorAll('.props__list');
 
 // Перенес строку 'Глава 4. Преобразование типов'
 const propsItemFour = document.querySelectorAll('.props__item_four');
-// eslint-disable-next-line max-len
 const listItem = document.querySelector('.item_two .content .props__list .props__item_four');
 propsItemFour[2].before(listItem);
 
@@ -18,15 +17,13 @@ const appTextOne = document.querySelector(
 const appTextTwo = document.querySelector(
   '.item_six .content .props__list .props__item:nth-child(10)'
 );
-
 propsItemTwo[7].after(appTextOne);
 propsItemTwo[8].after(appTextTwo);
 
 // Поменял props__list местами
-
 itemTitle[2].after(propsList[4]);
 itemTitle[3].after(propsList[3]);
-console.log(itemTitle[4].textContent);
+
 // Удалил баннер
 const banner = document.querySelector('.ads');
 banner.remove();
